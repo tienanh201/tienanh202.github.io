@@ -1,0 +1,42 @@
+{
+	"folders": [
+		{
+			"name": "javascript",
+			"path": "..\\..\\..\\..\\..\\..\\javascript"
+		},
+		{
+			"name": "HTML",
+			"path": "..\\..\\..\\..\\..\\..\\HTML"
+		},
+		{
+			"name": "Học HML",
+			"path": "..\\..\\..\\..\\..\\..\\..\\..\\BAITAP\\Học HML"
+		},
+		{
+			"name": "F8-Shop",
+			"path": "..\\..\\..\\..\\..\\..\\..\\..\\BAITAP\\F8-Shop"
+		},
+		{
+			"name": "W3_band",
+			"path": "..\\..\\..\\..\\..\\..\\..\\..\\BAITAP\\W3_band"
+		},
+		{
+			"name": "BRArchitects",
+			"path": "..\\..\\..\\..\\..\\..\\..\\..\\BAITAP\\BRArchitects"
+		},
+		{
+			"name": "Project-Cafe",
+			"path": "..\\..\\..\\..\\..\\..\\..\\..\\BAITAP\\Project-Cafe"
+		},
+		{
+			"name": "Project",
+			"path": "..\\..\\..\\..\\..\\..\\..\\..\\BAITAP\\Project"
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\..\\..\\..\\HTML_CSS_JS\\CaFe"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "CaFe"
+	}
+}

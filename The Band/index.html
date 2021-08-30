@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/grid.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/reponsive.css">
+    <link rel="stylesheet" href="/assets/font/fontawesome-free-5.15.3-web/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap">
+    <title>Travel</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header__wrapper">
+            <div class="header grid wide">
+                <!--  -->
+                <label for="nav__menu-icon"class=" nav__menu-item ">
+                    <i class="nav__icon fas fa-bars"></i>
+                </label>
+                <input type="checkbox"hidden class="nav__show-menu"name id="nav__menu-icon">
+
+
+                <!--  -->
+                <a href="" class="header__logo">
+                    <p class="header__logo-text">
+                        <span>T</span>RAVEL
+                    </p>
+                </a>
+                <div class="nav">
+                    <a href="#" class="nav__list">Home</a>
+                    <a href="#book" class="nav__list">Book</a>
+                    <a href="#package" class="nav__list">Package</a>
+                    <a href="#services" class="nav__list">Services</a>
+                    <a href="#gallery" class="nav__list">Gallery</a>
+                    <a href="#review" class="nav__list">Review</a>
+                    <a href="#contact" class="nav__list">Contact</a>
+                </div>
+                <div class="nav__icons">
+                    <div class="nav__icon-search">
+                        <!-- click vào để mở -->
+                        <label for="nav__icon-search--active" class="nav__icon-search-item  fas fa-search"></label>
+                        <input type="checkbox" name="" hidden class="active" id="nav__icon-search--active">
+                        <!-- hidden ẩn checkbox -->
+                        <!-- ----------------------------------------------------------------------------------- -->
+                        <div class="nav__searchbar">
+                            <input type="text" class="nav__searchbar-input" placeholder="Search here...">
+                            <i class=" fas fa-search"></i>
+                        </div>
+                    </div>
+
+                    <div class="nav__icon-user">
+                        <label for="nav__icon-user-login" class="nav__icon-user-item fas fa-user"></label>
+                        <input type="checkbox" name="" hidden class="login" id="nav__icon-user-login">
+                        <!-- tạo form click -->
+                        <label for="nav__icon-user-login" class="login-overlay"></label>
+                        <form action class="login-form">
+                            <h3 class="login-heading">Login</h3>
+                            <input type="email" placeholder="Enter Your Email" class="login-input">
+                            <input type="password" placeholder="Enter Your Password" class="login-input">
+                            <a href="" class="login-button">Login Now</a>
+                            <div class="remember__check">
+                                <input type="checkbox">
+                                <span class="login-remember">Remember Me</span>
+                            </div>
+                            <p class="login__text">
+                                Forgot Password?
+                                <a href="" class="login__text-link">Click Here</a>
+                            </p>
+                            <p class="login__text">
+                                Don't Have And Account?
+                                <a href="" class="login__text-link">Register</a>
+                            </p>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <div class="app">
+            <div class="slider">
+                <video class="video" controls(value 0) autoplay>
+                    <source src="/assets/img/2020786884.mp4">
+                </video>
+                <video class="video-tablet" controls(value 0) autoplay>
+                    <source src="/assets/img/2020786884.mp4">
+                </video>
+                <video class="video-mobile" controls(value 0) autoplay>
+                    <source src="/assets/img/2020786884.mp4">
+                </video>
+                <div class="slider__content">
+                    <div class="slider__heading1">
+                        ADVENTURE IS WORTHWHILE
+                    </div>
+                    <div class="slider__heading2">
+                        Discover New Places With Us, Adventure Awaits
+                    </div>
+                    <a href="" class="button">Discover More</a>
+                </div>
+                <!-- <img src="/assets/img/slider.jpg" alt="" class="slider__img">
+                <img src="/assets/img/slider__tablet.png" alt="" class="slider__img-tablet">
+                <img src="/assets/img/slider__mobile.png" alt="" class="slider__img-mobile"> -->
+            </div>
+            <!-- book -->
+            <div class="section">
+                <div class="grid wide">
+                    <h1 class="section__heading">
+                        <span class="letter">B</span>
+                        <span class="letter">O</span>
+                        <span class="letter">O</span>
+                        <span class="letter">K</span>
+                        <span class="letter space"></span>
+                        <span class="letter">N</span>
+                        <span class="letter">O</span>
+                        <span class="letter">W</span>
+                    </h1>
+                    <div id="book" class="book-now row">
+                        <div class="col l-6 m-12 c-12">
+                            <img src="/assets/img/book-img.png" alt="" class="book_img">
+                        </div>
+
+                        <div class="col l-6 m-12 c-12">
+                            <form action class="book-now__form">
+                                <div class="input-box">
+                                    <h3 class="book-now__heading">
+                                        Where To
+                                    </h3>
+                                    <input type="text" name="" required id="" placeholder="Place Name"
+                                        class="book-now__input">
+                                </div>
+
+                                <div class="input-box">
+                                    <h3 class="book-now__heading">
+                                        How Many
+                                    </h3>
+                                    <input type="text" name="" required id="" placeholder="Nuber of Guest"
+                                        class="book-now__input">
+                                </div>
+                                <div class="input-box">
+                                    <h3 class="book-now__heading">
+                                        Arrivals
+                                    </h3>
+                                    <input type="date" max="2030-12-31" name="" required id="" class="book-now__input">
+                                </div>
+                                <div class="input-box">
+                                    <h3 class="book-now__heading">
+                                        Leaving
+                                    </h3>
+                                    <input type="date" max="2030-12-31" name="" required id="" class="book-now__input">
+                                </div>
+                                <input class="button" type="submit" value="Book Now">
+
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Packages -->
+            <div class="section">
+                <div class="grid wide">
+
+                    <h1 class="section__heading">
+                        <span class="letter">P</span>
+                        <span class="letter">A</span>
+                        <span class="letter">C</span>
+                        <span class="letter">K</span>
+                        <span class="letter">A</span>
+                        <span class="letter">G</span>
+                        <span class="letter">E</span>
+                        <span class="letter">S</span>
+                    </h1>
+
+                    <div id="package" class="packages-now row">
+                        <!-- img1-------------------------------------------- -->
+                        <div class="packages col l-4 m-6 c-12">
+                            <div class="package__item">
+                                <img src="/assets/img/p-1.jpg" alt="" class="package__img">
+                                <div class="package__item-content">
+                                    <h3 class="package__item-heading">
+                                        <i class="package__item-heading-icon fas fa-map-marker-alt"></i>
+                                        Mumbai
+                                    </h3>
+                                    <p class="package__item-text">Mumbai, previously known as Bombay is one
+                                        of the most
+                                        populous and biggest cities of Maharashtra. Also the biggest
+                                        metropolis of this
+                                        state, Mumbai is also popular as the entertainment and financial
+                                        capital. It is
+                                        the largest city of India and fondly called as the city of dreams.
+                                    </p>
+                                    <div class="package__item-rate">
+                                        <i class="package__item-star fas fa-star"></i>
+                                        <i class="package__item-star fas fa-star"></i>
+                                        <i class="package__item-star fas fa-star"></i>
+                                        <i class="package__item-star fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="package__item-price">
+                                        <span class="package__item-price1">$90.00</span>
+                                        <span class="package__item-price2">$120.00</span>
+                                    </div>
+                                    <div>
+
+                                        <input class="button" type="submit" value="Book Now">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- IMG2---------------------------------------- -->
+                        <div class="packages col l-4 m-6 c-12">
+                            <div class="package__item">
+                                <img src="/assets/img/p-2.jpg" alt="" class="package__img">
+                                <div class="package__item-content">
+                                    <h3 class="package__item-heading">
+                                        <i class="package__item-heading-icon fas fa-map-marker-alt"></i>
+                                        Hawaii
+                                    </h3>
+                                    <p class="package__item-text">
+                                        Hawaii is the world's largest island chain, and it's the only U.S.
+                                        state
+                                        completely made up of islands. But only 7 of its 132 islands are
+                                        inhabited:
+                                        Hawaii (also known as the Big Island), Maui, Molokai, Lanai, Oahu,
+                                        Kauai, and
+                                        Niihau. ... Hawaii is known for its beautiful beaches—some of them
+                                        with unusual
+                                        colors.
+                                    </p>
+                                    <div class="package__item-rate">
+                                        <i class="package__item-star fas fa-star"></i>
+                                        <i class="package__item-star fas fa-star"></i>
+                                        <i class="package__item-star fas fa-star"></i>
+                                        <i class="package__item-star fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="package__item-price">
+                                        <span class="package__item-price1">$90.00</span>
+                                        <span class="package__item-price2">$120.00</span>
+                                    </div>
+                                    <div>
+
+                                        <input class="button" type="submit" value="Book Now">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- IMG3---------------------------------------- -->
+                        <div class="packages col l-4 m-6 c-12">
+                            <div class="package__item">
+                                <img src="/assets/img/p-3.jpg" alt="" class="package__img">
+                                <div class="package__item-content">
+                                    <h3 class="package__item-heading">
+                                        <i class="package__item-heading-icon fas fa-map-marker-alt"></i>
+                                        Sydney
+                                    </h3>
+                                    <p class="package__item-text">
+                                        Sydney, the capital of New South Wales, Australia. It is Australia's
+                                        oldest and
+                                        largest city with a population of around 4 million. Sydney is built
+                                        around a
+                                        huge harbour and hosts many tourist attractions as well as a number
+                                        of beaches,
+                                        bays and a couple of national parks.
+                                    </p>
+                                    <div class="package__item-rate">
+                                        <i class="package__item-star fas fa-star"></i>
+                                        <i class="package__item-star fas fa-star"></i>
+                                        <i class="package__item-star fas fa-star"></i>
+                                        <i class="package__item-star fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="package__item-price">
+                                        <span class="package__item-price1">$90.00</span>
+                                        <span class="package__item-price2">$120.00</span>
+                                    </div>
+                                    <div>
+
+                                        <input class="button" type="submit" value="Book Now">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- IMG4---------------------------------------- -->
+                        <div class="packages col l-4 m-6 c-12">
+                            <div class="package__item">
+                                <img src="/assets/img/p-4.jpg" alt="" class="package__img">
+                                <div class="package__item-content">
+                                    <h3 class="package__item-heading">
+                                        <i class="package__item-heading-icon fas fa-map-marker-alt"></i>
+                                        Paris
+                                    </h3>
+                                    <p class="package__item-text">
+                                        Paris (nicknamed the "City of light") is the capital city of France,
+                                        and the
+                                        largest city in France. ... Paris is also the center of French
+                                        economy,
+                                        politics, traffic and culture. Paris has many art museums and
+                                        historical
+                                        buildings. As a traffic center, Paris has a very good underground
+                                        subway system
+                                        (called the Metro).
+                                    </p>
+                                    <div class="package__item-rate">
+                                        <i class="package__item-star fas fa-star"></i>
+                                        <i class="package__item-star fas fa-star"></i>
+                                        <i class="package__item-star fas fa-star"></i>
+                                        <i class="package__item-star fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="package__item-price">
+                                        <span class="package__item-price1">$90.00</span>
+                                        <span class="package__item-price2">$120.00</span>
+                                    </div>
+                                    <div>
+
+                                        <input class="button" type="submit" value="Book Now">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- IMG5---------------------------------------- -->
+                        <div class="packages col l-4 m-6 c-12">
+                            <div class="package__item">
+                                <img src="/assets/img/p-5.jpg" alt="" class="package__img">
+                                <div class="package__item-content">
+                                    <h3 class="package__item-heading">
+                                        <i class="package__item-heading-icon fas fa-map-marker-alt"></i>
+                                        Tokyo
+                                    </h3>
+                                    <p class="package__item-text">
+                                        Tokyo (東京, Tōkyō) is Japan's capital and the world's most populous
+                                        metropolis.
+                                        It is also one of Japan's 47 prefectures, consisting of 23 central
+                                        city wards
+                                        and multiple cities, towns and villages west of the city center. The
+                                        Izu and
+                                        Ogasawara Islands are also part of Tokyo. Prior to 1868, Tokyo was
+                                        known as Edo
+                                    </p>
+                                    <div class="package__item-rate">
+                                        <i class="package__item-star fas fa-star"></i>
+                                        <i class="package__item-star fas fa-star"></i>
+                                        <i class="package__item-star fas fa-star"></i>
+                                        <i class="package__item-star fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="package__item-price">
+                                        <span class="package__item-price1">$90.00</span>
+                                        <span class="package__item-price2">$120.00</span>
+                                    </div>
+                                    <div>
+
+                                        <input class="button" type="submit" value="Book Now">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- IMG6---------------------------------------- -->
+                        <div class="packages col l-4 m-6 c-12">
+                            <div class="package__item">
+                                <img src="/assets/img/p-6.jpg" alt="" class="package__img">
+                                <div class="package__item-content">
+                                    <h3 class="package__item-heading">
+                                        <i class="package__item-heading-icon fas fa-map-marker-alt"></i>
+                                        Egypt
+                                    </h3>
+                                    <p class="package__item-text">
+                                        Egypt, country located in the northeastern corner of Africa. Egypt's
+                                        heartland,
+                                        the Nile River valley and delta, was the home of one of the
+                                        principal
+                                        civilizations of the ancient Middle East and, like Mesopotamia
+                                        farther east, was
+                                        the site of one of the world's earliest urban and literate
+                                        societies.
+                                    </p>
+                                    <div class="package__item-rate">
+                                        <i class="package__item-star fas fa-star"></i>
+                                        <i class="package__item-star fas fa-star"></i>
+                                        <i class="package__item-star fas fa-star"></i>
+                                        <i class="package__item-star fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="package__item-price">
+                                        <span class="package__item-price1">$90.00</span>
+                                        <span class="package__item-price2">$120.00</span>
+                                    </div>
+                                    <div>
+                                        <input class="button" type="submit" value="Book Now">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Services -->
+            <div class="section">
+                <div class="grid wide">
+                    <h1 class="section__heading">
+                        <span class="letter">S</span>
+                        <span class="letter">E</span>
+                        <span class="letter">R</span>
+                        <span class="letter">V</span>
+                        <span class="letter">I</span>
+                        <span class="letter">C</span>
+                        <span class="letter">E</span>
+                        <span class="letter">S</span>
+                    </h1>
+                    <div id="services"class="services-now row">
+                        <!-- iTEM1 -->
+                        <div class="services col l-4 m-6 c-12">
+                            <div class="services__item">
+                                <i class="services__item-icon fas fa-hotel"></i>
+                                <h3 class="services__item-heading">Affordable Hotels</h3>
+                                <p class="services__item-text">A hotel that provides minimum amenities and
+                                    services
+                                    for
+                                    a lower price than a regular
+                                    hotel in the area. This type of hotel provides clean rooms that are safe and
+                                    meet
+                                    the basic needs of a guest. Extra amenities may be available, but for an
+                                    extra
+                                    cost.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- iTEM2 -->
+                        <div class="services col l-4 m-6 c-12">
+                            <div class="services__item">
+                                <i class="services__item-icon fas fa-utensils"></i>
+                                <h3 class="services__item-heading">Food and Drinks</h3>
+                                <p class="services__item-text">
+                                    Food and drink is a big part of what travel is all about. We love searching
+                                    for
+                                    authentic fare by eating at food stalls, enjoying home cooking and trying
+                                    out
+                                    regional specialities. Sit with locals and enjoy traditional food in places
+                                    where
+                                    the atmosphere is part of the experience.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- iTEM3-->
+                        <div class="services col l-4 m-6 c-12">
+                            <div class="services__item">
+                                <i class="services__item-icon fas fa-bullhorn"></i>
+                                <h3 class="services__item-heading">Safety Guide</h3>
+                                <p class="services__item-text">
+                                    Clean and safe operations are more important than ever in this COVID era of
+                                    travel
+                                    and we’ve put together some tips to help you make sure your health and
+                                    safety
+                                    meets
+                                    the standard.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- iTEM4 -->
+                        <div class="services col l-4 m-6 c-12">
+                            <div class="services__item">
+                                <i class="services__item-icon fas fa-globe-europe"></i>
+                                <h3 class="services__item-heading">Around The World</h3>
+                                <p class="services__item-text">
+                                    Taking a Round the World Tour is becoming easier and more convenient than
+                                    ever
+                                    before! Whether it’s for a Honeymoon, a Gap Year, a Career Break or that
+                                    well
+                                    deserved Trip of a Lifetime, our Team will plan the perfect experience for
+                                    you.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- iTEM5 -->
+                        <div class="services col l-4 m-6 c-12">
+                            <div class="services__item">
+                                <i class="services__item-icon fas fa-plane"></i>
+                                <h3 class="services__item-heading">Plane</h3>
+                                <p class="services__item-text">
+                                    Looking for something to do once you have arrived? Why not take to the air
+                                    again?
+                                </p>
+                            </div>
+                        </div>
+                        <!-- iTEM5 -->
+                        <div class="services col l-4 m-6 c-12">
+                            <div class="services__item">
+                                <i class="services__item-icon fas fa-hiking"></i>
+                                <h3 class="services__item-heading">Adventure</h3>
+                                <p class="services__item-text">
+                                    Adventure tourism involves experiencing your destination through physically
+                                    participating in activities. This can involve a variety of actions such as;
+                                    hiking,
+                                    ...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- gallery -->
+            <div class="section">
+                <div class="grid wide">
+                    <h1 class="section__heading">
+                        <span class="letter">G</span>
+                        <span class="letter">A</span>
+                        <span class="letter">L</span>
+                        <span class="letter">L</span>
+                        <span class="letter">E</span>
+                        <span class="letter">R</span>
+                        <span class="letter">Y</span>
+
+                    </h1>
+                    <div id="gallery"class="gallery-now row">
+                        <!-- img1 -->
+                        <div class="gallery col l-4 m-6 c-12">
+                            <div class="gallery__item">
+                                <img src="/assets/img/g-1.jpg" alt="" class="gallery-img">
+                                <div class="gallery__item-touch">
+                                    <div class="gallery__item-overlay">
+                                        <h3 class="gallery__item-heading">AMAZING PLACES</h3>
+                                        <p class="gallery__item-text">Wanna go for a vacation</p>
+                                        <input class="button" type="submit" value="SEE MORE">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- img2 -->
+                        <div class="gallery col l-4 m-6 c-12">
+                            <div class="gallery__item">
+                                <img src="/assets/img/g-2.jpg" alt="" class="gallery-img">
+                                <div class="gallery__item-touch">
+                                    <div class="gallery__item-overlay">
+                                        <h3 class="gallery__item-heading">AMAZING PLACES</h3>
+                                        <p class="gallery__item-text">Wanna go for a vacation</p>
+                                        <input class="button" type="submit" value="SEE MORE">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- img3 -->
+                        <div class="gallery col l-4 m-6 c-12">
+                            <div class="gallery__item">
+                                <img src="/assets/img/g-3.jpg" alt="" class="gallery-img">
+                                <div class="gallery__item-touch">
+                                    <div class="gallery__item-overlay">
+                                        <h3 class="gallery__item-heading">AMAZING PLACES</h3>
+                                        <p class="gallery__item-text">Wanna go for a vacation</p>
+                                        <input class="button" type="submit" value="SEE MORE">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- img4 -->
+                        <div class="gallery col l-4 m-6 c-12">
+                            <div class="gallery__item">
+                                <img src="/assets/img/g-4.jpg" alt="" class="gallery-img">
+                                <div class="gallery__item-touch">
+                                    <div class="gallery__item-overlay">
+                                        <h3 class="gallery__item-heading">AMAZING PLACES</h3>
+                                        <p class="gallery__item-text">Wanna go for a vacation</p>
+                                        <input class="button" type="submit" value="SEE MORE">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- img5 -->
+                        <div class="gallery col l-4 m-6 c-12">
+                            <div class="gallery__item">
+                                <img src="/assets/img/g-5.jpg" alt="" class="gallery-img">
+                                <div class="gallery__item-touch">
+                                    <div class="gallery__item-overlay">
+                                        <h3 class="gallery__item-heading">AMAZING PLACES</h3>
+                                        <p class="gallery__item-text">Wanna go for a vacation</p>
+                                        <input class="button" type="submit" value="SEE MORE">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- img6 -->
+                        <div class="gallery col l-4 m-6 c-12">
+                            <div class="gallery__item">
+                                <img src="/assets/img/g-6.jpg" alt="" class="gallery-img">
+                                <div class="gallery__item-touch">
+                                    <div class="gallery__item-overlay">
+                                        <h3 class="gallery__item-heading">AMAZING PLACES</h3>
+                                        <p class="gallery__item-text">Wanna go for a vacation</p>
+                                        <input class="button" type="submit" value="SEE MORE">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- img7 -->
+                        <div class="gallery col l-4 m-6 c-12">
+                            <div class="gallery__item">
+                                <img src="/assets/img/g-7.jpg" alt="" class="gallery-img">
+                                <div class="gallery__item-touch">
+                                    <div class="gallery__item-overlay">
+                                        <h3 class="gallery__item-heading">AMAZING PLACES</h3>
+                                        <p class="gallery__item-text">Wanna go for a vacation</p>
+                                        <input class="button" type="submit" value="SEE MORE">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- img8 -->
+                        <div class="gallery col l-4 m-6 c-12">
+                            <div class="gallery__item">
+                                <img src="/assets/img/g-8.jpg" alt="" class="gallery-img">
+                                <div class="gallery__item-touch">
+                                    <div class="gallery__item-overlay">
+                                        <h3 class="gallery__item-heading">AMAZING PLACES</h3>
+                                        <p class="gallery__item-text">Wanna go for a vacation</p>
+                                        <input class="button" type="submit" value="SEE MORE">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- img9 -->
+                        <div class="gallery col l-4 m-12 c-12">
+                            <div class="gallery__item">
+                                <img src="/assets/img/g-9.jpg" alt="" class="gallery-img">
+                                <div class="gallery__item-touch">
+                                    <div class="gallery__item-overlay">
+                                        <h3 class="gallery__item-heading">AMAZING PLACES</h3>
+                                        <p class="gallery__item-text">Wanna go for a vacation</p>
+                                        <input class="button" type="submit" value="SEE MORE">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Review -->
+            <div class="section">
+                <div class="grid wide">
+                    <h1 class="section__heading">
+                        <span class="letter">R</span>
+                        <span class="letter">E</span>
+                        <span class="letter">V</span>
+                        <span class="letter">I</span>
+                        <span class="letter">E</span>
+                        <span class="letter">W</span>
+
+                    </h1>
+                    <div id="review"class="review-now row">
+                        <!-- img1 -->
+                        <div class="review col l-4 m-4 c-12">
+                            <div class="review__item">
+                                <img src="/assets/img/pic1.png" alt="" class="review-img">
+                                <h3 class="review__item-heading">Tatiana</h3>
+                                <p class="review__item-text">The best part of the trip was the 5 days of hiking hut to
+                                    hut - in one view -
+                                    glaciers, snow-covered peaks, fjords, wildflower meadows, tumbling waterfalls,
+                                    bubbling streams and rivers - and, except for the water and the birds, both of which
+                                    make delightful sounds, a wonderful quiet.
+                                </p>
+                                <div class="package__item-rate">
+                                    <i class="package__item-star fas fa-star"></i>
+                                    <i class="package__item-star fas fa-star"></i>
+                                    <i class="package__item-star fas fa-star"></i>
+                                    <i class="package__item-star fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- img2 -->
+                        <div class="review col l-4 m-4 c-12">
+                            <div class="review__item">
+                                <img src="/assets/img/pic2.1.jfif" alt="" class="review-img">
+                                <h3 class="review__item-heading">Ronaldo</h3>
+                                <p class="review__item-text">I had a wonderful time. I loved our guide - he was very
+                                    knowledgable, caring, kept track of everyone and communicated well. And the clean
+                                    tap water! I thought the group also looked out for one another.
+                                </p>
+                                <div class="package__item-rate">
+                                    <i class="package__item-star fas fa-star"></i>
+                                    <i class="package__item-star fas fa-star"></i>
+                                    <i class="package__item-star fas fa-star"></i>
+                                    <i class="package__item-star fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- img3 -->
+                        <div class="review col l-4 m-4 c-12">
+                            <div class="review__item">
+                                <img src="/assets/img/pic3.png" alt="" class="review-img">
+                                <h3 class="review__item-heading">Michelle</h3>
+                                <p class="review__item-text">Iceland has a magical landscape and warm and friendly
+                                    people who clearly love and want to care for the environment they share as their
+                                    home. The hiking is hard but oh so worth it. Most of the time we were on trails only
+                                    frequented by sheep, not people so you truly earned the sights of the trip. Thora
+                                    was the most amazing guide. Her love for her country and all it has to offer shines
+                                    through her smile and knowledge.
+                                </p>
+                                <div class="package__item-rate">
+                                    <i class="package__item-star fas fa-star"></i>
+                                    <i class="package__item-star fas fa-star"></i>
+                                    <i class="package__item-star fas fa-star"></i>
+                                    <i class="package__item-star fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- contact -->
+            <div class="section">
+                <div class="grid wide">
+                    <h1 class="section__heading">
+                        <span class="letter">C</span>
+                        <span class="letter">O</span>
+                        <span class="letter">N</span>
+                        <span class="letter">T</span>
+                        <span class="letter">A</span>
+                        <span class="letter">C</span>
+                        <span class="letter">T</span>
+                    </h1>
+                    <div id="contact" class="contact-now row">
+                        <div class="contact col l-5 m-5 c-12">
+
+                            <img src="/assets/img/moon.png" alt="" class="contact-img">
+
+                        </div>
+                        <div class="contact__item col l-7 m-7 c-12">
+                            <form action class="contact__item-form">
+                                <div class="row">
+                                    <div class="col l-6 m-6 c-12">
+                                        <input type="text" name="name" required id="" placeholder="Name"
+                                            class="contact-now__input">
+
+                                    </div>
+                                    <div class="contact col l-6 m-6 c-12">
+                                        <input type="text" name="email" required id="" placeholder="Email"
+                                            class="contact-now__input">
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col l-6 m-6 c-12">
+                                        <input type="number" name="" required id="quantity" placeholder="Number"
+                                            class="contact-now__input">
+
+                                    </div>
+                                    <div class="col l-6 m-6 c-12">
+                                        <input type="text" name="subject" required id="" placeholder="Subject"
+                                            class="contact-now__input">
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col l-12 m-12 c-12">
+                                        <textarea name="text" id="" cols="30" rows="10" class="contact-now__input">
+                                        </textarea>
+
+                                    </div>
+                                </div>
+
+                                <input class="button" type="submit" value="Send Message">
+
+
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-4 m-4 c-12">
+                        <h3 class="footer__heading">Branch Locations</h3>
+                        <div class="footer__item">
+                            <ul class="footer__list">
+                                <li class="footer__list-text">
+                                    <a href="" class="footer__list-link">India</a>
+                                </li>
+                                <li class="footer__list-text">
+                                    <a href="" class="footer__list-link">USA</a>
+                                </li>
+                                <li class="footer__list-text">
+                                    <a href="" class="footer__list-link">Japan</a>
+                                </li>
+                                <li class="footer__list-text">
+                                    <a href="" class="footer__list-link">Fance</a>
+                                </li>
+                                <li class="footer__list-text">
+                                    <a href="" class="footer__list-link">Egypt</a>
+                                </li>
+                                <li class="footer__list-text">
+                                    <a href="" class="footer__list-link">Australia</a>
+                                </li>
+                                <li class="footer__list-text">
+                                    <a href="" class="footer__list-link">New Zealand</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- part2 -->
+                    <div class="col l-4 m-4 c-12">
+                        <h3 class="footer__heading">Quick Links</h3>
+                        <div class="footer__item">
+                            <ul class="footer__list">
+                                <li class="footer__list-text">
+                                    <a href="" class="footer__list-link">Home</a>
+                                </li>
+                                <li class="footer__list-text">
+                                    <a href="" class="footer__list-link">Book</a>
+                                </li>
+                                <li class="footer__list-text">
+                                    <a href="" class="footer__list-link">Packages</a>
+                                </li>
+                                <li class="footer__list-text">
+                                    <a href="" class="footer__list-link">Services</a>
+                                </li>
+                                <li class="footer__list-text">
+                                    <a href="" class="footer__list-link">Gallery</a>
+                                </li>
+                                <li class="footer__list-text">
+                                    <a href="" class="footer__list-link">Review</a>
+                                </li>
+                                <li class="footer__list-text">
+                                    <a href="" class="footer__list-link">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- part3 -->
+                    <div class="col l-4 m-4 c-12">
+                        <h3 class="footer__heading">Follow Us</h3>
+                        <div class="footer__item">
+                            <ul class="footer__list">
+                                <li class="footer__list-text">
+                                    <a href="" class="footer__list-link">Facebook</a>
+                                </li>
+                                <li class="footer__list-text">
+                                    <a href="" class="footer__list-link">Instagram</a>
+                                </li>
+                                <li class="footer__list-text">
+                                    <a href="" class="footer__list-link">Twitter</a>
+                                </li>
+                                <li class="footer__list-text">
+                                    <a href="" class="footer__list-link">Linkedin</a>
+                                </li>
+                                <li class="footer__list-text">
+                                    <a href="" class="footer__list-link">Youtobe</a>
+                                </li>
+                                <li class="footer__list-text">
+                                    <a href="" class="footer__list-link">Snapchat</a>
+                                </li>
+                                <li class="footer__list-text">
+                                    <a href="" class="footer__list-link">Google+</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__copiright">
+                    <h3 class="footer__copiright-text">Created By
+                        <span class="footer__copiright-name">Do Tien Anh</span>
+                        | All Rights Reserved!
+                    </h3>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+
+
+
+</body>
+
+</html>

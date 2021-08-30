@@ -1,0 +1,8 @@
+@media (max-width:740px){
+    .nav__item{
+        display: block;
+    }
+    .header__search{
+        display: none;
+    }
+}
